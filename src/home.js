@@ -8,7 +8,7 @@ export const home = (() => {
 
     profile.textContent = name
     profile.href = profileLink
-    imgLink.text = site
+    imgLink.textContent = site
     imgLink.href = siteLink
 
     p.append('Photo by ', profile, ' on ', imgLink)
