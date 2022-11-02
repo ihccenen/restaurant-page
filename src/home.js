@@ -41,18 +41,5 @@ export const home = (() => {
     return header
   }
 
-  const createInfo = () => {
-    const info = document.createElement('div')
-    const address = document.createElement('p')
-    const hours = document.createElement('p')
-
-    info.classList.add('info')
-    hours.textContent = 'Hours: 9:00 - 22:00'
-    address.textContent = 'Address: Street name, 55301'
-    info.append(address, hours)
-
-    return info
-  }
-
-  return { createHeader, createInfo }
+  return { createHeader }
 })()
